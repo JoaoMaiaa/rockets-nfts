@@ -1,6 +1,12 @@
 // import './assets/sass/style.scss';
 import groupAvarts from './assets/images/group-avarts.png';
 import banner from './assets/images/banner.png';
+import artista1 from './assets/images/artista-1.png';
+import artista2 from './assets/images/artista-2.png';
+import artista3 from './assets/images/artista-3.png';
+import artista4 from './assets/images/artista-4.png';
+import artista5 from './assets/images/artista-5.png';
+import artista6 from './assets/images/artista-6.png';
 import galeria1 from './assets/images/galeria-1.png';
 import galeria2 from './assets/images/galeria-2.png';
 import galeria3 from './assets/images/galeria-3.png';
@@ -119,7 +125,6 @@ function App() {
                   <p class="mb-5 has-text-weight-bold">Artistas</p>
                 </Column>
                 <Column>
-
                   <Column.Group>
                     <Column className="p-5 has-text-light">
                       <p class="mx-4 mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada finibus nibh, molestie egestas nibh fringilla quis. Maecenas finibus laoreet placerat.</p>
@@ -137,23 +142,21 @@ function App() {
                       </Image.Container>
                     </Column>
                   </Column.Group>
-
                 </Column>
               </Column.Group>
-
             </Column>
           </Column.Group>
         </Container>
       </Section>
       <Section>
         <Container>
-          <Column.Group>
-            <Column>
-              <Title>Populares da semana</Title>
+          <Column.Group className="mb-5">
+            <Column className="mb-5">
+              <Title className="has-text-light"><span class="is-red">Populares</span> da semana</Title>
             </Column>
           </Column.Group>
           <Column.Group>
-            <Column size={6}>
+            <Column size={6} className="mt-5">
               <Card>
                 <div class="mt-4 mb-4">
                   <Card.Header>
@@ -167,8 +170,8 @@ function App() {
                     </div>
                   </Card.Header>
                   <div class="is-flex mt-0">
-                    <p class="">mayk brito</p>
-                    <p class="rkt">1.50 rkt</p>
+                    <p class="">João Maia</p> 
+                    <p class="rkt ml-5 has-text-weight-semibold"> 1.50 rkt</p>
                   </div>
                 </div>
                 <Card.Image>
@@ -178,7 +181,7 @@ function App() {
                 </Card.Image>
               </Card>
             </Column>
-            <Column size={6} className="border-l is-flex">
+            <Column size={6} className="mt-5 border-l is-flex">
               <Card className="ml-auto">
                 <div class="mt-4 mb-4">
                   <Card.Header>
@@ -191,9 +194,9 @@ function App() {
                       </svg>
                     </div>
                   </Card.Header>
-                  <div class="is-flex mt-1">
-                    <p class="">mayk brito</p>
-                    <p class="rkt">1.50 rkt</p>
+                  <div class="is-flex mt-0">
+                    <p class="">Jakeliny gracielly</p> 
+                    <p class="rkt ml-5 has-text-weight-semibold"> 2.00 rkt</p>
                   </div>
                 </div>
                 <Card.Image className="">
@@ -219,8 +222,8 @@ function App() {
                     </div>
                   </Card.Header>
                   <div class="is-flex mt-0">
-                    <p class="">mayk brito</p>
-                    <p class="rkt">1.50 rkt</p>
+                    <p class="">João Inácio</p>  
+                    <p class="rkt ml-5 has-text-weight-semibold"> 3.75 rkt</p>
                   </div>
                 </div>
                 <Card.Image>
@@ -232,7 +235,7 @@ function App() {
             </Column>
             <Column size={6} className="border-l is-flex">
               <Card className="ml-auto">
-                <div class="mb-4 mt-4">
+              <div class="mt-4 mb-4">
                   <Card.Header>
                     <Title className="mb-1 has-text-light">
                       Astronauta 4
@@ -244,8 +247,8 @@ function App() {
                     </div>
                   </Card.Header>
                   <div class="is-flex mt-0">
-                    <p class="">mayk brito</p>
-                    <p class="rkt">1.50 rkt</p>
+                    <p class="">Tamires Santos</p> 
+                    <p class="rkt ml-5 has-text-weight-semibold"> 4.30 rkt</p>
                   </div>
                 </div>
                 <Card.Image className="">
@@ -254,6 +257,44 @@ function App() {
                   </Image.Container>
                 </Card.Image>
               </Card>
+            </Column>
+          </Column.Group>
+        </Container>
+      </Section>
+      <Section>
+        <Container>
+          <Column.Group>
+            <Column className="has-text-centered mb-5">
+              <Title className="has-text-light">Melhores <span class="is-red">Artistas</span></Title>
+            </Column>
+          </Column.Group>
+          <Column.Group>
+            <Column size={4} className="">
+              <Card className="card-social p-4">
+                <div class="is-flex">
+                  <Card.Image>
+                    <Image src={artista1}/>
+                  </Card.Image>
+                  <div>
+                    <p>João Maia</p>
+                    <p>80 fotografias</p>
+                  </div>
+                </div>
+              </Card>
+            </Column>
+            <Column size={4} className="">
+              <Card className="card-social p-4">
+              <Card.Image>
+                  <Image src={artista2}/>
+                </Card.Image>
+              </Card>              
+            </Column>
+            <Column size={4} className="">
+              <Card className="card-social p-4">
+              <Card.Image>
+                  <Image src={artista3}/>
+                </Card.Image>
+              </Card>              
             </Column>
           </Column.Group>
         </Container>

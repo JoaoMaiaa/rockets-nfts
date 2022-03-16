@@ -50,4 +50,16 @@ input{
 
 .rkt{
     margin-left:150px;
+    color:var(--color-logo)!important;
+}
+
+.is-red{
+    color:var(--color-logo)!important;
+}
+
+.card-social{
+    background-color:var(--card-color)!important;
+    img{
+        width:120px!important;
+    }
 }
