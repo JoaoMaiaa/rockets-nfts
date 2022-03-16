@@ -44,8 +44,17 @@ input{
     width:300px;
 }
 
-.border-l{
-    border-left:1px solid;
+.columns .border-l{
+    border-left:1px solid!important;
+}
+
+@media (max-width:768px){
+    .card-image{
+        width:100%;
+    }
+    .columns .border-l{
+        border-left:none!important;
+    }
 }
 
 .rkt{
@@ -59,7 +68,7 @@ input{
 
 .card-social{
     background-color:var(--card-color)!important;
-    img{
+    .card-image{
         width:120px!important;
     }
 }

@@ -170,7 +170,7 @@ function App() {
                     </div>
                   </Card.Header>
                   <div class="is-flex mt-0">
-                    <p class="">João Maia</p> 
+                    <p class="">João Maia</p>
                     <p class="rkt ml-5 has-text-weight-semibold"> 1.50 rkt</p>
                   </div>
                 </div>
@@ -181,8 +181,8 @@ function App() {
                 </Card.Image>
               </Card>
             </Column>
-            <Column size={6} className="mt-5 border-l is-flex">
-              <Card className="ml-auto">
+            <Column size={6} className="mt-5 border-l is-flex-tablet is-justify-content-end">
+              <Card className="">
                 <div class="mt-4 mb-4">
                   <Card.Header>
                     <Title className="mb-1 has-text-light">
@@ -195,7 +195,7 @@ function App() {
                     </div>
                   </Card.Header>
                   <div class="is-flex mt-0">
-                    <p class="">Jakeliny gracielly</p> 
+                    <p class="">Jakeliny gracielly</p>
                     <p class="rkt ml-5 has-text-weight-semibold"> 2.00 rkt</p>
                   </div>
                 </div>
@@ -206,6 +206,7 @@ function App() {
                 </Card.Image>
               </Card>
             </Column>
+
           </Column.Group>
           <Column.Group>
             <Column size={6}>
@@ -222,7 +223,7 @@ function App() {
                     </div>
                   </Card.Header>
                   <div class="is-flex mt-0">
-                    <p class="">João Inácio</p>  
+                    <p class="">João Inácio</p>
                     <p class="rkt ml-5 has-text-weight-semibold"> 3.75 rkt</p>
                   </div>
                 </div>
@@ -233,9 +234,9 @@ function App() {
                 </Card.Image>
               </Card>
             </Column>
-            <Column size={6} className="border-l is-flex">
-              <Card className="ml-auto">
-              <div class="mt-4 mb-4">
+            <Column size={6} className="border-l is-flex-tablet is-justify-content-end">
+              <Card className="">
+                <div class="mt-4 mb-4">
                   <Card.Header>
                     <Title className="mb-1 has-text-light">
                       Astronauta 4
@@ -247,7 +248,7 @@ function App() {
                     </div>
                   </Card.Header>
                   <div class="is-flex mt-0">
-                    <p class="">Tamires Santos</p> 
+                    <p class="">Tamires Santos</p>
                     <p class="rkt ml-5 has-text-weight-semibold"> 4.30 rkt</p>
                   </div>
                 </div>
@@ -268,33 +269,89 @@ function App() {
               <Title className="has-text-light">Melhores <span class="is-red">Artistas</span></Title>
             </Column>
           </Column.Group>
-          <Column.Group>
+          <Column.Group className="mt-5 is-flex-wrap-wrap">
             <Column size={4} className="">
               <Card className="card-social p-4">
                 <div class="is-flex">
                   <Card.Image>
-                    <Image src={artista1}/>
+                    <Image src={artista1} />
                   </Card.Image>
-                  <div>
-                    <p>João Maia</p>
-                    <p>80 fotografias</p>
+                  <div class="my-auto has-text-weight-semibold">
+                    <p class="has-text-light mb-2">João Maia</p>
+                    <p class="is-red">80 fotografias</p>
                   </div>
                 </div>
               </Card>
             </Column>
             <Column size={4} className="">
               <Card className="card-social p-4">
-              <Card.Image>
-                  <Image src={artista2}/>
-                </Card.Image>
-              </Card>              
+                <div class="is-flex">
+                  <Card.Image>
+                    <Image src={artista2} />
+                  </Card.Image>
+                  <div class="my-auto has-text-weight-semibold">
+                    <p class="has-text-light mb-2">Jakeliny G.</p>
+                    <p class="is-red">99 fotografias</p>
+                  </div>
+                </div>
+              </Card>
             </Column>
             <Column size={4} className="">
               <Card className="card-social p-4">
-              <Card.Image>
-                  <Image src={artista3}/>
-                </Card.Image>
-              </Card>              
+                <div class="is-flex">
+                  <Card.Image>
+                    <Image src={artista3} />
+                  </Card.Image>
+                  <div class="my-auto has-text-weight-semibold">
+                    <p class="has-text-light mb-2">João L. (biro)</p>
+                    <p class="is-red">50 fotografias</p>
+                  </div>
+                </div>
+              </Card>
+            </Column>
+            <Column size={4} className="">
+              <Card className="card-social p-4">
+                <div class="is-flex">
+                  <Card.Image>
+                    <Image src={artista4} />
+                  </Card.Image>
+                  <div class="my-auto has-text-weight-semibold">
+                    <p class="has-text-light mb-2">Tamires Santos</p>
+                    <p class="is-red">43 fotografias</p>
+                  </div>
+                </div>
+              </Card>
+            </Column>
+            <Column size={4} className="">
+              <Card className="card-social p-4">
+                <div class="is-flex">
+                  <Card.Image>
+                    <Image src={artista5} />
+                  </Card.Image>
+                  <div class="my-auto has-text-weight-semibold">
+                    <p class="has-text-light mb-2">Ana Silva</p>
+                    <p class="is-red">28 fotografias</p>
+                  </div>
+                </div>
+              </Card>
+            </Column>
+            <Column size={4} className="">
+              <Card className="card-social p-4">
+                <div class="is-flex">
+                  <Card.Image>
+                    <Image src={artista6} />
+                  </Card.Image>
+                  <div class="my-auto has-text-weight-semibold">
+                    <p class="has-text-light mb-2">Diego F.</p>
+                    <p class="is-red">20 fotografias</p>
+                  </div>
+                </div>
+              </Card>
+            </Column>
+          </Column.Group>
+          <Column.Group cllasName="pt-5 mb-5">
+            <Column>
+              <a href="#" class="has-text-light is-flex is-justify-content-center">Veja todos os artistas</a>
             </Column>
           </Column.Group>
         </Container>
