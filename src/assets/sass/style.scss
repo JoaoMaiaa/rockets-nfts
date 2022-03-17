@@ -4,6 +4,8 @@
 
 *{
     font-family: 'Montserrat', sans-serif;
+    margin:0;
+    padding:0;
 }
 
 :root {
@@ -66,9 +68,33 @@ input{
     color:var(--color-logo)!important;
 }
 
+.card-social-red{
+    background-color:var(--color-logo)!important;
+    .card-image{
+        width:120px!important;
+    }
+}
+
 .card-social{
     background-color:var(--card-color)!important;
     .card-image{
         width:120px!important;
+    }   
+}
+
+.section-footer{
+    width:100vw;
+    background-color:var(--card-color);
+    border-radius:1px solid;
+}
+
+.border-b{
+    border-bottom:1px solid;
+}
+
+.is-danger{
+    background-color:var(--color-logo)!important;
+    &:hover{
+        background-color:#fa4b3f!important;
     }
 }

@@ -19,7 +19,7 @@ import astronauta1 from './assets/images/astronauta-1.png';
 import astronauta2 from './assets/images/astronauta-2.png';
 import astronauta3 from './assets/images/astronauta-3.png';
 import astronauta4 from './assets/images/astronauta-4.png';
-import { Container, Section, Column, Notification, Content, Card, Image, Title } from 'rbx'
+import { Container, Button, Section, Column, Notification, Content, Card, Image, Title } from 'rbx'
 import React, { Fragment } from 'react'
 
 function App() {
@@ -284,14 +284,14 @@ function App() {
               </Card>
             </Column>
             <Column size={4} className="">
-              <Card className="card-social p-4">
+              <Card className="card-social-red p-4">
                 <div class="is-flex">
                   <Card.Image>
                     <Image src={artista2} />
                   </Card.Image>
                   <div class="my-auto has-text-weight-semibold">
                     <p class="has-text-light mb-2">Jakeliny G.</p>
-                    <p class="is-red">99 fotografias</p>
+                    <p class="has-text-light">99 fotografias</p>
                   </div>
                 </div>
               </Card>
@@ -349,9 +349,41 @@ function App() {
               </Card>
             </Column>
           </Column.Group>
-          <Column.Group cllasName="pt-5 mb-5">
+          <Column.Group className="pt-5 mb-5">
             <Column>
-              <a href="#" class="has-text-light is-flex is-justify-content-center">Veja todos os artistas</a>
+              <a href="#" class="has-text-light is-flex is-justify-content-center">Veja todos os artistas
+                <svg class="ml-2 mt-1" width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.98811 4.20788L1.63474 14.3674L3.75438 15.6929L10.1078 5.53343L11.8123 12.9286L14.248 12.3671L11.585 0.81365L0.031564 3.47665L0.592988 5.91241L7.98811 4.20788Z" fill="#FF5B50" />
+                </svg>
+              </a>
+            </Column>
+          </Column.Group>
+        </Container>
+      </Section>
+      <Section className="section-footer border-b">
+        <Container>
+          <Column.Group className="back-footer ">
+            <Column className="py-5">
+              <Title className="has-text-light is-flex is-align-items-center">Rocket <span class="is-red">NFTs</span></Title>
+            </Column>
+            <Column className="is-flex-desktop is-justify-content-end is-align-items-center">
+              <Button color="danger">
+                <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.44174 6.70327L9.79825 22.676L13.1308 22.6016L12.7742 6.62889L20.0871 13.6224L22.3906 11.2138L10.9656 0.287669L0.0395174 11.7127L2.44818 14.0162L9.44174 6.70327Z" fill="black" />
+                </svg>
+              </Button>
+            </Column>
+          </Column.Group>
+        </Container>
+      </Section>
+      <Section className="section-footer border-b">
+        <Container>
+          <Column.Group>
+            <Column>
+              ...
+            </Column>
+            <Column size={8}>
+              ...
             </Column>
           </Column.Group>
         </Container>
