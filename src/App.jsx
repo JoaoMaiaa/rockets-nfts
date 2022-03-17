@@ -19,7 +19,7 @@ import astronauta1 from './assets/images/astronauta-1.png';
 import astronauta2 from './assets/images/astronauta-2.png';
 import astronauta3 from './assets/images/astronauta-3.png';
 import astronauta4 from './assets/images/astronauta-4.png';
-import { Container, Button, Section, Column, Notification, Content, Card, Image, Title } from 'rbx'
+import { Container, Field, List, Control, Input, Button, Section, Column, Notification, Content, Card, Image, Title } from 'rbx'
 import React, { Fragment } from 'react'
 
 function App() {
@@ -376,14 +376,57 @@ function App() {
           </Column.Group>
         </Container>
       </Section>
-      <Section className="section-footer border-b">
+      <Section className="section-footer-2 border-b">
         <Container>
           <Column.Group>
-            <Column>
-              ...
+            <Column className="">
+              <Title size={4} className="has-text-light">Fique por dentro de <br /> <span class="is-red">todas as novidades</span></Title>
+              <Field kind="addons">
+                <Control>
+                  <Input type="text" placeholder="nft@rocketseat.com.br" />
+                </Control>
+                <Control>
+                  <Button className="btn-addons has-text-black has-text-semibold">Enviar</Button>
+                </Control>
+              </Field>
             </Column>
+            <span class="border-r"></span>
             <Column size={8}>
-              ...
+              <Container className="pl-5 is-flex-tablet">
+                <Column.Group>
+                  <Column>
+                    <List className="">
+                      <Title className="has-text-light px-5" size={6}>Empresa</Title>
+                      <List.Item className="px-5 is-block">Sobre</List.Item>
+                      <List.Item className="px-5 is-block">Serviços</List.Item>
+                      <List.Item className="px-5 is-block">Time</List.Item>
+                      <List.Item className="px-5 is-block">Carreira</List.Item>
+                    </List>
+                  </Column>
+                </Column.Group>
+                <Column.Group>
+                  <Column>
+                    <List className="">
+                      <Title className="has-text-light px-5" size={6}>Mapas</Title>
+                      <List.Item className="px-5 is-block">Galeria</List.Item>
+                      <List.Item className="px-5 is-block">Populares</List.Item>
+                      <List.Item className="px-5 is-block">Vendas</List.Item>
+                      <List.Item className="px-5 is-block">Contato</List.Item>
+                    </List>
+                  </Column>
+                </Column.Group>
+                <Column.Group>
+                  <Column>
+                    <List className="">
+                      <Title className="has-text-light pl-5" size={6}>Links</Title>
+                      <List.Item className="px-5 is-block">FAQs</List.Item>
+                      <List.Item className="px-5 is-block">Termos</List.Item>
+                      <List.Item className="px-5 is-block">Política</List.Item>
+                      <List.Item className="px-5 is-block">Ajuda</List.Item>
+                    </List>
+                  </Column>
+                </Column.Group>
+              </Container>
             </Column>
           </Column.Group>
         </Container>

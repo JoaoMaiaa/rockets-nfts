@@ -98,3 +98,38 @@ input{
         background-color:#fa4b3f!important;
     }
 }
+
+.input, .input:hover{
+    background-color:var(--color-input)!important;
+    border-radius:0px!important;
+    border-right:0!important;
+    border-color:var(--color-input)!important;
+    color:#665f5f!important;
+}
+
+.input::placeholder{
+    color:var(--subtitle-color)!important;
+}
+
+.btn-addons, .btn-addons:hover{
+    border-radius:0px!important;
+}
+
+.input:focus, .btn-addons:focus{
+    border-color:var(--color-input)!important;
+    box-shadow:0 0 0.125rem rgb(255, 255, 255) !important;
+}
+
+.has-text-black{
+    color:var(--text-color)!important;
+}
+
+.section-footer-2{
+    width:100vw;
+    background-color:var(--card-color);
+    border-radius:1px solid; 
+}
+
+.border-r{
+    border-right:1px solid;
+}
