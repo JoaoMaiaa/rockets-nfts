@@ -17,6 +17,13 @@
     --black-text: #000;
     --color-input: #0D0D0D;
 }
+.navbar{
+    position:absolute!important;
+    width:100vw;
+}
+.is-dark{
+    background-color:transparent!important;
+}
 
 body{
     background-color:var(--body-background)!important;
@@ -127,9 +134,22 @@ input{
 .section-footer-2{
     width:100vw;
     background-color:var(--card-color);
-    border-radius:1px solid; 
+    border-radius:1px; 
 }
 
 .border-r{
     border-right:1px solid;
+}
+
+.footer{
+    width:100vw;
+    background-color:var(--card-color)!important;
+    border-radius:1px; 
+    padding:3rem 1.5rem!important;
+}
+
+@media (max-width:768px ){
+    .border-r{
+        display:none;
+    }
 }
