@@ -17,10 +17,12 @@
     --black-text: #000;
     --color-input: #0D0D0D;
 }
+
 .navbar{
     position:absolute!important;
     width:100vw;
 }
+
 .is-dark{
     background-color:transparent!important;
 }
@@ -29,6 +31,11 @@ body{
     background-color:var(--body-background)!important;
     min-height:100vh;
     height:100%;
+}
+
+a.navbar-item:hover{
+    background-color:transparent!important;
+    color:#5e5e5e!important;
 }
 
 .section1{
@@ -152,4 +159,11 @@ input{
     .border-r{
         display:none;
     }
+    .font-s{
+        font-size:14px;
+    }
+}
+
+.section-footer-2 .list-item:hover{
+    color:#b4c7c7!important;
 }

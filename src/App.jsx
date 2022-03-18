@@ -19,7 +19,8 @@ import astronauta1 from './assets/images/astronauta-1.png';
 import astronauta2 from './assets/images/astronauta-2.png';
 import astronauta3 from './assets/images/astronauta-3.png';
 import astronauta4 from './assets/images/astronauta-4.png';
-import { Container, Field, Navbar, List, Footer, Control, Input, Button, Section, Column, Notification, Content, Card, Image, Title } from 'rbx'
+import logoMetaMask from './assets/images/logo_MetaMask.svg';
+import { Container, Field, Navbar, List, Footer, Control, Input, Button, Section, Column, Content, Card, Image, Title } from 'rbx'
 import React, { Fragment } from 'react'
 
 function App() {
@@ -37,29 +38,20 @@ function App() {
             <Navbar.Burger />
           </Navbar.Brand>
           <Navbar.Menu>
-            <Navbar.Segment align="start">
-              <Navbar.Item>Home</Navbar.Item>
-              <Navbar.Item>Documentation</Navbar.Item>
-
-              <Navbar.Item dropdown>
-                <Navbar.Link>More</Navbar.Link>
-                <Navbar.Dropdown>
-                  <Navbar.Item>About</Navbar.Item>
-                  <Navbar.Item>Jobs</Navbar.Item>
-                  <Navbar.Item>Contact</Navbar.Item>
-                  <Navbar.Divider />
-                  <Navbar.Item>Report an issue</Navbar.Item>
-                </Navbar.Dropdown>
-              </Navbar.Item>
+            <Navbar.Segment align="end">
+              <Navbar.Item>Comprar NFT</Navbar.Item>
+              <Navbar.Item>Sobre</Navbar.Item>
+              <Navbar.Item>FAQ</Navbar.Item>
             </Navbar.Segment>
-
             <Navbar.Segment align="end">
               <Navbar.Item>
                 <Button.Group>
-                  <Button color="primary">
-                    <strong>Sign up</strong>
+                  <Button color="light">
+                    <Image.Container>
+                      <Image className="mr-4" src={logoMetaMask} />
+                    </Image.Container>
+                    Conectar carteira
                   </Button>
-                  <Button color="light">Log in</Button>
                 </Button.Group>
               </Navbar.Item>
             </Navbar.Segment>
@@ -71,7 +63,7 @@ function App() {
           <Column.Group className="mt-5">
             <Column size={4}>
               <Content>
-                <p class="has-text-light">
+                <p class="has-text-light font-s is-flex is-justify-content-center">
                   Mercado digital para colecionáveis em criptos e tokens não fungíveis [NFTs]. <br /> Compre, venda e descubra ativos digitais exclusivos para você
                 </p>
               </Content>
@@ -88,7 +80,7 @@ function App() {
               </Title>
             </Column>
             <Column>
-              <div class="">
+              <div class="is-flex is-justify-content-center">
                 <svg width="202" height="202" viewBox="0 0 202 202" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="101" cy="101" r="75" fill="#FF5B50" stroke="#060606" stroke-width="50" />
                   <circle cx="101" cy="101" r="100" stroke="white" />
@@ -160,23 +152,25 @@ function App() {
           <Column.Group>
             <Column>
               <Column.Group>
-                <Column size={2} className="my-auto">
-                  <Title className="mb-0 has-text-light">10k+</Title>
-                  <p class="mb-5 has-text-weight-bold">Artes</p>
-                  <Title className="mb-0 has-text-light">200k+</Title>
-                  <p class="mb-5 has-text-weight-bold">Vendas</p>
-                  <Title className="mb-0 has-text-light">20k+</Title>
-                  <p class="mb-5 has-text-weight-bold">Artistas</p>
+                <Column size={2} className="my-auto is-flex is-justify-content-center">
+                  <div class="">
+                    <Title className="mb-0 has-text-light">10k+</Title>
+                    <p class="mb-5 has-text-weight-bold">Artes</p>
+                    <Title className="mb-0 has-text-light">200k+</Title>
+                    <p class="mb-5 has-text-weight-bold">Vendas</p>
+                    <Title className="mb-0 has-text-light">20k+</Title>
+                    <p class="mb-5 has-text-weight-bold">Artistas</p>
+                  </div>
                 </Column>
                 <Column>
                   <Column.Group>
                     <Column className="p-5 has-text-light">
-                      <p class="mx-4 mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada finibus nibh, molestie egestas nibh fringilla quis. Maecenas finibus laoreet placerat.</p>
-                      <a href="#" class="mx-4 has-text-light">Lorem Ipsum</a>
+                      <p class="mx-4 mb-5 font-s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <span class="is-underlined is-red">Integer malesuada</span> finibus nibh, molestie egestas nibh fringilla quis. Maecenas finibus laoreet placerat.</p>
+                      <a href="#" class="font-s is-underlined mx-4 has-text-light">Lorem Ipsum</a>
                     </Column>
                     <Column className="p-5 has-text-light">
-                      <p class="mx-4 mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada finibus nibh, molestie egestas nibh fringilla quis. Maecenas finibus laoreet placerat.</p>
-                      <a href="#" class="mx-4 has-text-light">Lorem Ipsum</a>
+                      <p class="mx-4 mb-5 font-s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <span class="is-underlined is-red">Integer malesuada</span> finibus nibh, molestie egestas nibh fringilla quis. Maecenas finibus laoreet placerat.</p>
+                      <a href="#" class="font-s is-underlined mx-4 has-text-light">Lorem Ipsum</a>
                     </Column>
                   </Column.Group>
                   <Column.Group>
